@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+    <script type="text/javascript">
+    // 数字 Number
+    123; // 整数123
+    0.456; // 浮点数0.456
+    1.2345e3; // 科学计数法表示1.2345x1000，等同于1234.5
+    -99; // 负数
+    NaN; // NaN表示Not a Number，当无法计算结果时用NaN表示
+    Infinity; // Infinity表示无限大，当数值超过了JavaScript的Number所能表示的最大值时，就表示为Infinity
+
+    // 运算
+    1 + 2; // 3
+    (1 + 2) * 5 / 2; // 7.5
+    2 / 0; // Infinity
+    0 / 0; // NaN
+    10 % 3; // 1
+    10.5 % 3; // 1.5
+    // 注意%是求余运算。
+    
+    // 字符串 String 
+    'hello world'
+    '123123'
+
+    // 布尔值
+    包含 true false
+    2 > 1   //true
+    1 > 2  //false
+
+    // &&运算是与运算，只有所有都为true，&&运算结果才是true
+    true && true; // 这个&&语句计算结果为true
+    true && false; // 这个&&语句计算结果为false
+    false && true && false; // 这个&&语句计算结果为false
+
+    // !运算是非运算
+    ! true; // 结果为false
+    ! false; // 结果为true
+    ! (2 > 5); // 结果为true
+
+    // ||运算是或运算，只要其中有一个为true，||运算结果就是true
+    false || false; // 这个||语句计算结果为false
+    true || false; // 这个||语句计算结果为true
+    false || true || false; // 这个||语句计算结果为true
+
+    // 比较运算
+    false == 0; // true
+    false === 0; // false
+    /*第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；
+    第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较*/
+    // 另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：
+    NaN === NaN; // false
+    // 唯一能判断NaN的方法是通过isNaN()函数：
+    isNaN(NaN); // true
+
+    // null和undefined
+    // JavaScript的设计者希望用null表示一个空的值，而undefined表示值未定义。事实证明，这并没有什么卵用，区分两者的意义不大。大多数情况下，我们都应该用null。undefined仅仅在判断函数参数是否传递的情况下有用。
+    
+    //数组
+    [0,1,'hello world',5,6]
+    new Array(1,2,3) //[1,2,3]
+
+    // 对象
+    var person = {
+        name: 'Bob',
+        age: 20,
+        tags: ['js', 'web', 'mobile'],
+        city: 'Beijing',
+        hasCar: true,
+        zipcode: null
+    };
+    console.log(person.name) // Bob
+    </script>
+    </body>
+</html>
