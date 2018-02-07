@@ -25,5 +25,5 @@ JS demo
 * [跑马灯](https://github.com/hongxinzz/Javascript/blob/master/cn/%E8%B7%91%E9%A9%AC%E7%81%AF.html)
 
 
-        每天记录一点
+        每天记录一点
         明天会更美好~
