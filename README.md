@@ -4,6 +4,7 @@
     欢迎到访  
     很高兴见到您  
     来享受代码带来的快乐吧~
+    在线浏览Demo 例：https://hongxinzz.github.io/Javascript/cn/跑马灯.html
 
 Js基本语法
 
@@ -15,8 +16,6 @@ Js基本语法
 * [循环](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E5%BE%AA%E7%8E%AF.html)
 
 JS demo
-        在线浏览Demo 例：https://hongxinzz.github.io/Javascript/cn/跑马灯.html
-
 * [倒三角](https://github.com/hongxinzz/Javascript-/blob/master/cn/%E5%80%92%E4%B8%89%E8%A7%92.html)
 * [乘法表](https://github.com/hongxinzz/Javascript-/blob/master/cn/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8.html)
 * [动态添加div](https://github.com/hongxinzz/Javascript-/blob/master/cn/%E6%B7%BB%E5%8A%A01000%E4%B8%AAdiv.html)
