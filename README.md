@@ -3,7 +3,7 @@
 
     欢迎到访  
     很高兴见到您  
-    来享受代码带来的快了吧~
+    来享受代码带来的快乐吧~
 
 Js基本语法
 
@@ -14,7 +14,7 @@ Js基本语法
 * [if语句](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD.html)
 * [循环](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E5%BE%AA%E7%8E%AF.html)
 
-JS demo
+JS demo< br />
 在线浏览Demo 例：https://hongxinzz.github.io/Javascript/cn/跑马灯.html
 
 * [倒三角](https://github.com/hongxinzz/Javascript-/blob/master/cn/%E5%80%92%E4%B8%89%E8%A7%92.html)
