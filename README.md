@@ -19,9 +19,9 @@ JS 小demo
 * [乘法表](https://github.com/hongxinzz/Javascript-/blob/master/cn/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8.html)
 * [动态添加div](https://github.com/hongxinzz/Javascript-/blob/master/cn/%E6%B7%BB%E5%8A%A01000%E4%B8%AAdiv.html)
 * [Tab切换](https://github.com/hongxinzz/Javascript-/blob/master/cn/tab%E5%88%87%E6%8D%A2.html)
-* [投票]（https://github.com/hongxinzz/Javascript/blob/master/cn/%E6%8A%95%E7%A5%A8.html）
-* [拖拽]（https://github.com/hongxinzz/Javascript/blob/master/cn/%E6%8B%96%E6%8B%BD.html）
-* [跑马灯]（https://github.com/hongxinzz/Javascript/blob/master/cn/%E8%B7%91%E9%A9%AC%E7%81%AF.html）
+* [投票](https://github.com/hongxinzz/Javascript/blob/master/cn/%E6%8A%95%E7%A5%A8.html)
+* [拖拽](https://github.com/hongxinzz/Javascript/blob/master/cn/%E6%8B%96%E6%8B%BD.html)
+* [跑马灯](https://github.com/hongxinzz/Javascript/blob/master/cn/%E8%B7%91%E9%A9%AC%E7%81%AF.html)
 
 
         每天记录一点
