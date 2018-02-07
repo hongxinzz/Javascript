@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>鼠标右键效果</title>
+        <style type="text/css">
+            #box{
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <p>请右击鼠标</p>
+        <p id="box">我在这里<br />我在这里<br />我在这里</p>
+        <script type="text/javascript">
+            box = document.getElementById("box");
+            document.oncontextmenu=function(event){
+                x = event.clientX;
+                y = event.clientY;
+                box.style.left = x + 'px';
+                box.style.top = y + 'px';
+                box.style.display='inline';
+                return false;//禁止浏览器默认行为
+            }
+        </script>
+    </body>
+</html>

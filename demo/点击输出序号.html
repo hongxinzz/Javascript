@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>点击输出序号</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .wrap {
+            width: 400px;
+            margin: 30px auto;
+        }
+        .wrap li {
+            height: 30px;
+            line-height: 30px;
+            font-size: 20px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="wrap" class="wrap">
+        <li id="li1">第1个li，输出我的序号吧～～</li>
+        <li id="li2">第2个li，输出我的序号吧～～</li>
+        <li id="li3">第3个li，输出我的序号吧～～</li>
+        <li id="li4">第4个li，输出我的序号吧～～</li>
+        <li id="li5">第5个li，输出我的序号吧～～</li>
+        <li id="li6">第6个li，输出我的序号吧～～</li>
+        <li id="li7">第7个li，输出我的序号吧～～</li>
+        <li id="li8">第8个li，输出我的序号吧～～</li>
+    </ul>
+    <script type="text/javascript">
+        var wrap = document.getElementById("wrap");
+        var li1 = document.getElementById("li1");
+        var li2 = document.getElementById("li2");
+        var li3 = document.getElementById("li3");
+        var li4 = document.getElementById("li4");
+        var li5 = document.getElementById("li5");
+        var li6 = document.getElementById("li6");
+        var li7 = document.getElementById("li7");
+        var li8 = document.getElementById("li8");
+        var lis = wrap.getElementsByTagName("li");
+
+        /* 1 */
+        /*li1.onclick = function(){
+            console.log(li1.innerHTML);
+        }
+        li2.onclick = function(){
+            console.log(li2.innerHTML);
+        }
+        li3.onclick = function(){
+            console.log(li3.innerHTML);
+        }
+        li4.onclick = function(){
+            console.log(li4.innerHTML);
+        }
+        li5.onclick = function(){
+            console.log(li5.innerHTML);
+        }
+        li6.onclick = function(){
+            console.log(li6.innerHTML);
+        }
+        li7.onclick = function(){
+            console.log(li7.innerHTML);
+        }
+        li8.onclick = function(){
+            console.log(li8.innerHTML);
+        }*/
+
+        /* 2 */
+        /*lis[0].onclick = function(){
+            console.log(lis[0].innerHTML);
+        }
+        lis[1].onclick = function(){
+            console.log(lis[1].innerHTML);
+        }
+        lis[2].onclick = function(){
+            console.log(lis[2].innerHTML);
+        }
+        lis[3].onclick = function(){
+            console.log(lis[3].innerHTML);
+        }
+        lis[4].onclick = function(){
+            console.log(lis[4].innerHTML);
+        }
+        lis[5].onclick = function(){
+            console.log(lis[5].innerHTML);
+        }
+        lis[6].onclick = function(){
+            console.log(lis[6].innerHTML);
+        }
+        lis[7].onclick = function(){
+            console.log(lis[7].innerHTML);
+        }*/
+
+        /* 3 */
+        /*lis[0].onclick = function(){
+            show(0);
+        }
+        lis[1].onclick = function(){
+            show(1);
+        }
+        lis[2].onclick = function(){
+            show(2);
+        }
+        lis[3].onclick = function(){
+            show(3);
+        }
+        lis[4].onclick = function(){
+            show(4);
+        }
+        lis[5].onclick = function(){
+            show(5);
+        }
+        lis[6].onclick = function(){
+            show(6);
+        }
+        lis[7].onclick = function(){
+            show(7);
+        }
+        function show(x) {
+            console.log(lis[x].innerHTML);
+        }*/
+
+        /* 4 */
+        /*for(var i = 0; i < lis.length; i++) {
+            lis[i].onclick = function(){
+                for(var j = 0; j < lis.length; j++) {
+                    if(this == lis[j]) {
+                        console.log(lis[j].innerHTML);
+                    }
+                }
+            }
+        }*/
+
+        /* 5 */
+        /*for(var i = 0; i < lis.length; i++) {
+            lis[i].onclick = function(){
+                console.log(this.innerHTML);
+            }
+        }*/
+
+        /* 6 */
+        /*for(var i = 0; i < lis.length; i++) {
+            lis[i].index = i;
+            lis[i].onclick = function() {
+                console.log(lis[this.index].innerHTML);
+            }
+        }*/
+
+        /* 7 */
+        /*for(var i = 0; i < lis.length; i++) {
+            lis[i].onclick = function(index){
+                return function(){
+                    console.log(lis[index].innerHTML);
+                }
+            }(i);
+        }*/
+    </script>
+</body>
+</html>

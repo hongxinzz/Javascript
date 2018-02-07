@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>鼠标跟随效果</title>
+        <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+        #box{
+            position:absolute;
+            top:50px;
+            left:50px;
+        }
+    </style>
+    <body>
+    <p id="box">走到哪跟到哪</p>
+    </body>
+    <script type="text/javascript">
+    var box = document.getElementById('box')
+   document.onmousemove= function(event){
+        x = event.clientX;
+        y = event.clientY;
+        box.style.left = x + 'px';
+        box.style.top = y + 'px';
+    }
+    </script>
+</html>

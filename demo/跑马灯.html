@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<title>HTML5 - JS 跑马灯</title>
+	<link rel="stylesheet" href="reset.css">
+	<style type="text/css">
+		#runtext {
+			width: 350px;
+			height: 50px;
+			margin: 0 auto;
+			border: 2px solid #f00;
+			font-size: 35px;
+			-webkit-user-select: none;
+		}
+	</style>
+</head>
+<body>
+	<p id='runtext'></p>
+	<script type="text/javascript">
+		var str = ["H", "T", "M", "L", "5", "王", "者", "荣", "誉", "之", "战"];
+		var text = document.getElementById('runtext');
+		var step = 0;
+		function run() {
+			if (step < str.length) {
+				text.innerHTML += str[step];
+				step++;
+				setTimeout(run,300);
+			}
+		}run();
+	</script>
+</body>
+</html>

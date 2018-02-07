@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加1000个div</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .outer div:nth-child(2n),
+        .wrap div:nth-child(2n) {
+            height: 20px;
+            background-color: #cfc;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="outer"></div>
+    <div id="outer" class="outer"></div>
+    <script type="text/javascript">
+        var wrap = document.getElementById("wrap");
+        var outer = document.getElementById("outer");
+        console.time("wrap");
+        for(var i = 0; i < 1000; i++) {
+            wrap.innerHTML += "<div>" + i + "</div>";
+        }
+        console.timeEnd("wrap");
+
+        console.time("outer");
+        var str = "";
+        for(var i = 0; i < 1000; i++) {
+            str += "<div>" + i + "</div>";
+        }
+        outer.innerHTML = str;
+        console.timeEnd("outer");
+    </script>
+</body>
+</html>

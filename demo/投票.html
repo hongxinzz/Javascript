@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+    span{
+        display:inline-block;
+        height:16px;
+        font-size:12px;
+        line-height:16px;
+        text-align:center;
+        background-color:skyblue;
+    }
+    </style>
+    <body>
+    <div id="box">
+        <p>投票人数A:<input type="text" /> <span></span></p>
+        <p>投票人数B:<input type="text" /> <span></span></p>
+        <p>投票人数C:<input type="text" /> <span></span></p>
+        <p>投票人数D:<input type="text" /> <span></span></p>
+        <button id="add">开始计算投票</button>
+    </div>
+    <script type="text/javascript">
+    var box = document.getElementById('box');
+    var val = box.getElementsByTagName('input');
+    var span = box.getElementsByTagName('span');
+    var addBtn = document.getElementById('add');
+    var valIput = [];//存放获取到的val值 并放在数组里
+   
+    for(var i = 0; i < val.length;i++){
+        //存放数组 并转换成数字
+        val[i].onblur = function(){
+            valIput.push(parseInt(this.value))
+        }
+    }
+        
+    add.onclick = function(){
+        // 计算val的值
+        var sum = 0; //存放所有Val相加的值
+        for (var i = 0; i < valIput.length; i++) {
+           sum +=  valIput[i]
+        };
+        console.log(sum)
+
+        for(var i = 0; i < span.length;i++ ){
+                // span宽度
+            var percent = valIput[i] / sum * 100;
+            span[i].style.width = percent + "px";
+                // 取余两位数
+            span[i].innerHTML = percent.toFixed(2) + '%';
+        }
+    }
+    </script>
+    </body>
+</html>
