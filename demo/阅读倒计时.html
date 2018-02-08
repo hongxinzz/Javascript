@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>阅读计时</title>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="">
+ <input type="submit" name="Submit" value="同意" />
+</form>
+<script language="javascript">
+    document.form1.Submit.disabled = true;
+    var speed = 1000; //速度
+    var wait = 10; //停留时间
+    function updateinfo(){
+      if(wait == 0){
+        document.form1.Submit.value = "我同意";
+        document.form1.Submit.disabled = false;
+      }
+      else{
+        document.form1.Submit.value = "阅读条款"+wait;
+        wait--;
+        window.setTimeout("updateinfo()",speed);
+      }
+    }
+updateinfo();
+</script>
+</body>
+
+</html>
