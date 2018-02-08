@@ -23,7 +23,7 @@ JS demo
 * [投票](https://github.com/hongxinzz/Javascript/blob/master/demo/%E6%8A%95%E7%A5%A8.html)
 * [拖拽](https://github.com/hongxinzz/Javascript/blob/master/demo/%E6%8B%96%E6%8B%BD.html)
 * [跑马灯](https://github.com/hongxinzz/Javascript/blob/master/demo/%E8%B7%91%E9%A9%AC%E7%81%AF.html)
-* [鼠标跟随](https://github.com/hongxinzz/Javascript/blob/master/demo/%E8%B7%91%E9%A9%AC%E7%81%AF.html)
+* [鼠标跟随](https://github.com/hongxinzz/Javascript/blob/master/demo/%E9%BC%A0%E6%A0%87%E8%B7%9F%E9%9A%8F%E6%95%88%E6%9E%9C.html)
 * [改变网页右键菜单](https://github.com/hongxinzz/Javascript/blob/master/demo/%E6%94%B9%E5%8F%98%E7%BD%91%E9%A1%B5%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95.html)
 
         每天记录一点
