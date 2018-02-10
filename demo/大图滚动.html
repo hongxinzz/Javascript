@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>大图滚动</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .wrap {
+            overflow: hidden;
+            width: 200px;
+            height: 310px;
+            margin: 50px auto 0;
+            border: 1px solid #f00;
+        }
+        .con {
+            width: 1000px;
+            height: 310px;
+        }
+        .con img {
+            float: left;
+            width: 200px;
+            height: 310px;
+        }
+        .list {
+            width: 350px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .list li {
+            float: left;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<!--    注意：子级的宽度需要大于父级的宽度
+        采用几张图片，跟无缝滚动有什么区别？ -->
+        <!-- img中的title添加索引值，方便调试 -->
+    <div class="wrap" id="outer">
+        <div class="con" id="inner">
+            <img src="../images/11.jpg" alt="" title="1">
+            <img src="../images/22.jpg" alt="" title="2">
+            <img src="../images/33.jpg" alt="" title="3">
+            <img src="../images/44.jpg" alt="" title="4">
+            <img src="../images/55.jpg" alt="" title="5">
+        </div>
+    </div>
+    <ul class="list" id="btn">
+        <li>←</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>→</li>
+    </ul>
+    <script type="text/javascript">
+        var outer = document.getElementById("outer");
+        var inner = document.getElementById("inner");
+        var btns = document.getElementById("btn").getElementsByTagName("li");
+        // 用于控制图片的滚动
+        var timer = null;
+        // 用于控制索引值变化实现目标值的传参
+        var timerIndex = null;
+        // 用于索引值的存储
+        var index = 0;
+
+        function startMove(endPos) {
+            // 获取起点
+            var startPos = outer.scrollLeft;
+            var speed;
+            if(timer) {
+                clearInterval(timer);
+            }
+            timer = setInterval(move, 20);
+            // move是缓冲运动函数
+            function move() {
+                speed = (endPos - startPos) / 10;
+                // 为了保证speed永远为整数
+                speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+                startPos += speed;
+                // 起点到达终点清除计时器
+                if(Math.abs(endPos - startPos) <= 5 ) {
+                    startPos = endPos;
+                    clearInterval(timer);
+                    timer = null;
+                }
+                outer.scrollLeft = startPos;
+            }
+        }
+        // 利用索引值实现多次滚动
+        function indexChange() {
+            index++;
+            if(index == 5) {
+                index = 0;
+            }
+            startMove(index * 200);
+        }
+        timerIndex = setInterval(indexChange, 3000);
+        
+        // 添加序号功能—自定义属性方式
+        for(var i = 1; i < btns.length; i++) {
+            btns[i].index = i;
+            btns[i].onclick = function() {
+                // 清除计时器、
+                clearInterval(timerIndex);
+                // 序号的索引值要与自动滚动的索引保持一致
+                index = this.index - 1;
+                startMove(index * 200);
+                // 再次重启计时器
+                timerIndex = setInterval(indexChange, 3000);
+            }
+        }
+        // 添加序号功能—闭包方式
+        // for(var i = 1; i < btns.length; i++) {
+        //     btns[i].onclick = function(sort) {
+        //         return function() {
+        //             // 清除计时器、
+        //             clearInterval(timerIndex);
+        //             // 序号的索引值要与自动滚动的索引保持一致
+        //             index = sort - 1;
+        //             startMove(index * 200);
+        //             // 再次重启计时器
+        //             timerIndex = setInterval(indexChange, 3000);
+        //         }
+        //     }(i);
+        // }
+
+        // 添加左键
+        btns[0].onclick = function() {
+            // 要等到缓冲函数执行完毕之后才允许右键点击效果
+            if(timer) {
+                return;
+            }
+            clearInterval(timerIndex);
+            index--;
+            if(index == -1) {
+                index = 4;
+            }
+            startMove(index * 200);
+            // 再次启动计时器
+            timerIndex = setInterval(indexChange, 3000);
+        }
+
+        // 添加右键
+        btns[6].onclick = function() {
+            // 要等到缓冲函数执行完毕之后才允许右键点击效果
+            if(timer) {
+                return;
+            }
+            clearInterval(timerIndex);
+            indexChange();
+            // 再次重启计时器
+            timerIndex = setInterval(indexChange, 3000);
+        }
+    </script>
+</body>
+</html>
