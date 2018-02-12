@@ -27,6 +27,7 @@ JS demo
 * [改变网页右键菜单](https://github.com/hongxinzz/Javascript/blob/master/demo/%E6%94%B9%E5%8F%98%E7%BD%91%E9%A1%B5%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95.html)
 * [阅读计时](https://github.com/hongxinzz/Javascript/blob/master/demo/%E9%98%85%E8%AF%BB%E5%80%92%E8%AE%A1%E6%97%B6.html)
 * [大图滚动](https://github.com/hongxinzz/Javascript/blob/master/demo/%E5%A4%A7%E5%9B%BE%E6%BB%9A%E5%8A%A8.html)
+* [简易计算器](https://github.com/hongxinzz/Javascript/blob/master/demo/%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8.html)
 
         每天记录一点
         明天会更美好~
