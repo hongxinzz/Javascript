@@ -14,7 +14,7 @@ Js基本语法
 * [数组](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E6%95%B0%E7%BB%84.html)
 * [if语句](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD.html)
 * [循环](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E5%BE%AA%E7%8E%AF.html)
-* [变量类型和运算](https://github.com/hongxinzz/Javascript/blob/master/cn/Javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F.html)
+* [变量类型和运算](https://github.com/hongxinzz/Javascript/blob/master/cn/bianliang.html)
 
 JS demo
 * [倒三角](https://github.com/hongxinzz/Javascript-/blob/master/demo/%E5%80%92%E4%B8%89%E8%A7%92.html)
