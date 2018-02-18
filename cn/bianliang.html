@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>typeof类型</title>
+</head>
+<body>
+	<script>
+		typeof undefind // undefind
+		typeof [] //obj
+		typeof null //obj
+		typeof {} //obj
+		typeof '123' // string
+		typeof 123 //number
+		typeof true //boolean
+		typeof console.log //function
+
+			//值类型
+
+		var a = 10;
+		var b = a;
+		a = 20;
+		console.log(b) //10
+
+			//引用类型
+
+		var obj1 = {
+			age:20
+		}
+		var obj2 = obj1;
+		obj2.age = 10;
+		console.log(obj2) // 10
+
+
+		// 变量计算-强制类型转换
+
+		// 字符串拼接
+		var a = 100 + 10 //110
+		var b = 100 + '10' //11010
+
+		// 运算符
+		100 == '100' // true
+		0 = '' // true
+		null == undefind //true
+
+		//if语句
+		var a = true;
+		if(a){
+
+		}
+		var b = 100;
+		if (b) {
+
+		}
+		var c = '';
+		if (c) {
+			
+		}
+	</script>
+</body>
+</html>
