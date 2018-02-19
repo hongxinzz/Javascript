@@ -1,7 +1,8 @@
 # Javascript-
-个人总结以及部分demo-基础来自廖雪峰的博客
-
-    欢迎到访  
+个人总结以及部分demo
+我也只是一个前端小白，也在努力的学习💪💪
+    欢迎到访  
+    欢迎到访  
     很高兴见到您  
     来享受代码带来的快乐吧~
     在线浏览Demo 例：https://hongxinzz.github.io/Javascript/demo/跑马灯.html
@@ -15,6 +16,7 @@ Js基本语法
 * [if语句](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E6%9D%A1%E4%BB%B6%E5%88%A4%E6%96%AD.html)
 * [循环](https://github.com/hongxinzz/Javascript-/blob/master/cn/javascript%E5%BE%AA%E7%8E%AF.html)
 * [变量类型和运算](https://github.com/hongxinzz/Javascript/blob/master/cn/typeof%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B.html)
+* [函数参数与参数匹配](https://github.com/hongxinzz/Javascript/blob/master/cn/%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E5%8F%82%E6%95%B0%E5%8C%B9%E9%85%8D.html)
 
 JS demo
 * [倒三角](https://github.com/hongxinzz/Javascript-/blob/master/demo/%E5%80%92%E4%B8%89%E8%A7%92.html)
@@ -30,5 +32,6 @@ JS demo
 * [大图滚动](https://github.com/hongxinzz/Javascript/blob/master/demo/%E5%A4%A7%E5%9B%BE%E6%BB%9A%E5%8A%A8.html)
 * [简易计算器](https://github.com/hongxinzz/Javascript/blob/master/demo/%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8.html)
 
-        每天记录一点
-        明天会更美好~
+        每天记录一点😊
+        明天会更美好~😊
+        来享受代码带来的快乐吧~😊
