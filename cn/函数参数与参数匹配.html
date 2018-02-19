@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>函数参数与参数匹配</title>
+</head>
+<body>
+	<script>
+		// 函数参数
+		function fn(a,b){   //相当于创建了 var a 和 var b
+			console.log(a+b);
+		}
+		fn(1,2); //3
+		fn(1);  // NaN    相当于 给函数 var a = 1； var b 定义没赋值  相当于1+undefind = NaN
+		fn(2,2,3); // 前两个数传值进去 第三个直接抛弃    输出 4
+
+
+		// 函数参数匹配
+		function fn2(a,b){  // a,b  形参
+			console.log('fn2长度',fn2.length); // 函数形参的个数
+			console.log('arguments长度',arguments.length);// 得到实参的个数
+			if(fn2.length == arguments.length ){
+				console.log(a+b);
+			}else{
+				console.error("你输入的参数有错，请输入"+fn2.length + '参数');
+			}
+		}
+
+		fn2(1,2);//实参
+		fn2(1,2,3);
+	</script>
+</body>
+</html>
