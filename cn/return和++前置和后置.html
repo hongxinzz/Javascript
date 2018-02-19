@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>return和++前置和后置</title>
+</head>
+<body>
+	<div id="demo"></div>
+</body>
+<script>
+	function fn(a,b){
+		console.log('return前的都会被返回出去');
+		return a+b;
+		console.log('return后的不会在执行');
+	}
+	console.log(fn(1,2));
+	 
+	 //JQ当中的id
+
+	function $(id){
+		return document.getElementById(id)
+	}
+	$('demo').style.width = '100px';
+	$('demo').style.height = '100px';
+	$('demo').style.backgroundColor = 'red';
+	
+	// 小练习
+
+	var a = 10;
+	var demo = fn1(50);
+	alert(demo);
+	function fn1(num){
+		return num*num
+	}// 2500
+
+/*---------------------------------------------*/
+	// a++ ++后置每次自加1 先运算后自加 ++a ++前置 每次自加1 先自加 后运算
+
+
+	var a = 10,b = 20, c = 30;
+	++a;
+	a++;
+	e = ++a+(++b)+(c++)+a++;
+	alert(e)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
