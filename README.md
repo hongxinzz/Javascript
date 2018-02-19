@@ -1,8 +1,8 @@
 # Javascript-
 个人总结以及部分demo
 我也只是一个前端小白，也在努力的学习💪💪
-    欢迎到访  
-    欢迎到访  
+
+    欢迎到访  
     很高兴见到您  
     来享受代码带来的快乐吧~
     在线浏览Demo 例：https://hongxinzz.github.io/Javascript/demo/跑马灯.html
@@ -32,6 +32,6 @@ JS demo
 * [大图滚动](https://github.com/hongxinzz/Javascript/blob/master/demo/%E5%A4%A7%E5%9B%BE%E6%BB%9A%E5%8A%A8.html)
 * [简易计算器](https://github.com/hongxinzz/Javascript/blob/master/demo/%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8.html)
 
-        每天记录一点😊
-        明天会更美好~😊
-        来享受代码带来的快乐吧~😊
+       每天记录一点😊
+       明天会更美好~😊
+       来享受代码带来的快乐吧~😊
