@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表单小玩意</title>
+</head>
+<body>
+	页面加载聚焦: <input type="text" id="focus">	
+	鼠标经过表单全选: <input type="text" id="allSelect">	
+</body>
+	<script>
+		window.onload = function(){
+			function $(id){
+				return document.getElementById(id)
+			}
+			$('focus').focus();
+			$('allSelect').onmouseover = function(){
+				this.select();
+			}
+		}
+	</script>
+</html>
