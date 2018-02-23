@@ -7,12 +7,12 @@
 <body>
 	<script>
 		// 函数参数
-		function fn(a,b){   //相当于创建了 var a 和 var b
+		function add(a,b){   //相当于创建了 var a 和 var b
 			console.log(a+b);
 		}
-		fn(1,2); //3
-		fn(1);  // NaN    相当于 给函数 var a = 1； var b 定义没赋值  相当于1+undefind = NaN
-		fn(2,2,3); // 前两个数传值进去 第三个直接抛弃    输出 4
+		add(1,2); //3
+		add(1);  // NaN    相当于 给函数 var a = 1； var b 定义没赋值  相当于1+undefind = NaN
+		add(2,2,3); // 前两个数传值进去 第三个直接抛弃    输出 4
 
 
 		// 函数参数匹配
@@ -28,6 +28,20 @@
 
 		fn2(1,2);//实参
 		fn2(1,2,3);
+		
+		//当形参很多时可以通过arguments去处理
+		
+		function superAdd(){
+		   var sum =0,
+                       len = arguments.length;
+                   for(var i=0; i<len; i++){
+                        sum += arguments[i];
+                    }
+		    return sum;
+		}
+		superAdd(1,2,3,4);//10
+		superAdd(1,2,3,4,5)//15
+		superAdd(1,2,3,4,123,343,547,894)//1917
 	</script>
 </body>
 </html>
