@@ -19,6 +19,7 @@ Js基本语法
 * [变量类型和运算](https://github.com/hongxinzz/Javascript/blob/master/cn/typeof%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B.html)
 * [函数参数与参数匹配](https://github.com/hongxinzz/Javascript/blob/master/cn/%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E5%8F%82%E6%95%B0%E5%8C%B9%E9%85%8D.html)
 * [return和++前置后置](https://github.com/hongxinzz/Javascript/blob/master/cn/return%E5%92%8C%2B%2B%E5%89%8D%E7%BD%AE%E5%92%8C%E5%90%8E%E7%BD%AE.html)
+* [DOM新增与删除](https://github.com/hongxinzz/Javascript/blob/master/cn/DOM%E6%96%B0%E5%A2%9E%E4%B8%8E%E5%88%A0%E9%99%A4.html)
 
 JS demo
 * [倒三角](https://github.com/hongxinzz/Javascript-/blob/master/demo/%E5%80%92%E4%B8%89%E8%A7%92.html)
