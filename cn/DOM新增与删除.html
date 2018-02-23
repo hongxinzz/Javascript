@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <style type="text/css">
+        div{
+            float:left;
+            width:400px;
+        }
+    </style>
+    <body>
+    <div>
+        插入20000个节点<button onclick="fragment(0)">无fragment</button>
+        <ul></ul>
+    </div>
+    <div>
+        插入20000个节点<button onclick="fragment(1)">无fragment</button>
+        <ul></ul>
+    </div>
+    <script type="text/javascript">
+        // DOM新增与删除
+
+        // document.createElement()创建元素节点。参数：元素名称的字符串
+        // document.createTextNode()创建文本节点。参数：文本字符串
+        // document.createAttribute()创建一个属性节点。参数：属性名（比如：id、class、style、src、onclick等）
+
+        // 访问value属性，为这个属性写入值
+        // document.createComment()createComment() 方法可创建注释节点。参数：注释字符串
+        // insertBefore() 前面插入元素节点注释节点
+
+        // 语法：node.insertBefore(newnode,existingnode) 注意：node为插入节点的父节点
+        // newnode 必须。要插入的节点对象
+        // existingnode 必须。(新节点的参照对象)
+        // 如果插入的节点是文档中已有的节点，会先删除那个节点然后插入。
+        // 返回值：节点对象，你插入的那个节点
+        // appendChild() 后面插入元素节点注释节点
+
+        // 语法：NODE.appendChild(node) 注意：NODE为插入节点的父节点
+        // 参数：node 你要添加的节点对象。
+        // setAttributeNode() 插入属性节点
+
+        // 语法：element.setAttributeNode(attributenode)
+        // 返回值：替换的属性节点，没有则为null
+        // removeChild() 删除元素节点注释节点
+
+        // 语法：node.removeChild(node) 第一个node是删除节点的父节点
+        // 返回值：删除的节点
+        // removeNamedItem() 和removeAttribute() 删除属性
+
+        // 语法：namednodemap.removeNamedItem(nodename)
+        // element.removeAttribute(attributename)
+
+        // attributes 属性：返回指定节点属性的集合。
+        // removeAttribute()更方便
+        // 如何选择一个节点的子节点
+
+        // 使用childNodes属性，会返回一个子节点集合（这个属性包含空白字符，空白字符为一个text节点）
+        // 使用children属性，获得一个不包含空白字符的集合
+        // 使用firstElementChild属性，获得第一个节点（不含空白字符）
+        // 使用firstChild属性，获得第一个节点（含空白字符）
+        // 使用listElementChild属性，获得最后一个节点（不含空白字符）
+        // 使用listChild属性，获得最后一个节点（含空白字符）
+        // DocumentFragment
+
+        // 这是一个游离在DOM树之外的代码片段，如果要插入大量节点时（循环插入），频繁的操作DOM树会导致频繁渲染页面卡顿，所以可以使用这种方法来加速，现将插入的操作添加进DocumentFragment 中，然后将DocumentFragment一次性插入DOM树。
+        // 下面是示例
+    function fragment(n) {
+        var u = document.getElementsByTagName("ul");
+        var fra = document.createDocumentFragment();
+        var li;
+        var text;
+        var max = 20000;
+        for(var i = 0 ; i < max; i++)
+        {
+            li = document.createElement("li");
+            text = document.createTextNode("第" + i + "个");
+            li.appendChild(text);
+            console.log(li);
+            if(n === 0)
+            {
+                u[n].appendChild(li);
+            }
+            else
+            {
+                fra.appendChild(li);
+                console.log("aa");
+            }
+        }
+        if(n === 1)
+        {
+            u[n].appendChild(fra);
+        }
+    }
+    
+    </script>
+    </body>
+</html>
