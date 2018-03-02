@@ -1,4 +1,4 @@
-# Javascript-
+# Javascript
 ### 个人总结以及部分Demo
 ### 我也是一只前端小猴，也在努力的学习💪💪
 
