@@ -38,7 +38,7 @@ JS demo
 
 Css & Html
 * [导航效果](https://github.com/hongxinzz/Javascript-/blob/master/cn/gensui.html)
-* [导航效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/list.html）
+* [列表效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/list.html）
 
 
 
