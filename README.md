@@ -5,8 +5,8 @@
         欢迎到访  
         很高兴见到您  
         来享受代码带来的快乐吧~
-        在线浏览基础 例:https://hongxinzz.github.io/Javascript/cn/函数参数与参数匹配.html
-        在线浏览Demo 例:https://hongxinzz.github.io/Javascript/demo/跑马灯.html
+        在线浏览基础 例:https://hongxinzz.github.io/Javascript-css-html/cn/函数参数与参数匹配.html
+        在线浏览Demo 例:https://hongxinzz.github.io/Javascript-css-html/demo/跑马灯.html
 
 Js基本语法
 
@@ -38,7 +38,7 @@ JS demo
 
 Css & Html
 * [导航效果](https://github.com/hongxinzz/Javascript-/blob/master/cn/gensui.html)
-* [列表效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/list.html）
+* [列表效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/list.html)
 
 
 
