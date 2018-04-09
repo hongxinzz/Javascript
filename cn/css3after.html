@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3</title>
+    <style>
+        li {
+            position: relative;
+            float: left;
+            padding: 15px;
+            list-style: none;
+        }
+
+        .clearfix {
+            overflow: hidden;
+        }
+
+        li::before {
+            content: " ";
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            width: 0;
+            transition: all 400ms linear;
+
+        }
+
+        li:hover::before {
+            left: 0;
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        /*aaaaaaaaaaaa*/
+
+        a {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #000;
+            font-size: 32px;
+            padding: 5px 10px;
+
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            transition: 0.3s linear all;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            transition: 0.3s linear all;
+        }
+
+        a:hover::before,
+        a:hover::after {
+            position: absolute;
+            color: red;
+            font-weight: bolder;
+        }
+
+        a:hover::before {
+            content: "\5B";
+            left: -15px;
+        }
+
+        a:hover::after {
+            content: "\5D";
+            right: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="clearfix">
+        <li> HTML5</li>
+        <li>CSS3</li>
+        <li>JAVASCRIPT</li>
+        <li>REACT</li>
+        <li>CANVAS</li>
+    </ul>
+    <div>
+        <a href="">看我的效果1</a>
+        <a href="">看我的效果2</a>
+        <a href="">看我的效果3</a>
+    </div>
+</body>
+
+</html>
