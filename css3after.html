@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3</title>
+    <style>
+        li {
+            position: relative;
+            float: left;
+            padding: 15px;
+            list-style: none;
+        }
+        div{
+            margin-top: 50px;
+        }
+        .clearfix {
+            overflow: hidden;
+        }
+
+        li::before {
+            content: " ";
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            width: 0;
+            transition: all 400ms linear;
+        }
+
+        li:hover::before {
+            left: 0;
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        /*aaaaaaaaaaaa*/
+
+        .a a {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            padding: 5px 10px;
+
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            left: 10px;
+            transition: 0.3s linear all;
+        }
+
+        .a a::after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            transition: 0.3s linear all;
+        }
+
+        .a a:hover::before,
+        .a a:hover::after {
+            position: absolute;
+            color: red;
+            font-weight: bolder;
+        }
+
+        .a a:hover::before {
+            content: "\5B";
+            left: -5px;
+        }
+
+        .a a:hover::after {
+            content: "\5D";
+            right: -5px;
+        }
+        /*bbbbb*/
+        .b a{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            padding: 5px 10px;
+            margin:  0 5px;
+        }
+        .b a::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 0;
+            left: 0;
+            border-bottom: 2px solid red;
+            border-left: 2px solid #fff;
+            transition: all 200ms linear;
+        }
+        .b a:hover::before{
+           height: 100%;
+           border-left: 2px solid red;
+        }
+        /*ccccccc*/
+        .c a{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            padding: 5px 10px;
+            margin:  0 5px;
+        }
+        .c a::before{
+            content: "55555";
+            position: absolute;
+            width: 80%;
+            height: 0;
+            bottom: 0;
+            left: 10%;
+            border-bottom: 2px solid red;
+            transition: all 200ms linear;
+        }
+        .c a:hover::before{
+            width: 100%;
+            left: 0;
+            border-top: 2px solid red;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="clearfix">
+        <li> HTML5</li>
+        <li>CSS3</li>
+        <li>JAVASCRIPT</li>
+        <li>REACT</li>
+        <li>CANVAS</li>
+    </ul>
+    <div class="a">
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+    </div>
+    <div class="b">
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+    </div>
+    <div class="c">
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+        <a href="">看我的效果</a>
+    </div>
+</body>
+
+</html>
