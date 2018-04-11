@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>快来抢购</title>
+    <style>
+        #btn {
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            height: 35px;
+            background: #ccc;
+            text-align: center;
+            line-height: 35px;
+            color: #666;
+        }
+
+        #btn.btn {
+            background: red;
+            color: #fff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lastTime">
+        <span>0天 </span>
+        <span>00: </span>
+        <span>00: </span>
+        <span>00 </span>
+    </div>
+    <a href="javascript:;" id="btn">即将开抢!</a>
+    <script type="text/javascript">
+        var oLt = document.getElementById("lastTime");
+        var oBtn = document.getElementById("btn");
+        time();
+        var timer = setInterval(time, 1000);
+        function time() {
+            var endTime = new Date('2018/10/01 00:00:00');
+            var nowTime = new Date();
+            var splus = endTime.getTime() - nowTime.getTime();
+            //天 时 分 秒
+            if (splus <= 1) {
+                clearInterval(timer);
+                oBtn.className = 'btn';
+                oBn.innerHTML = '开始秒杀!';
+                oBtn.href = 'http://www.baidu.com';
+                return;
+            } else {
+                oBtn.className = '';
+            }
+            var day = Math.floor(splus / 1000 / 60 / 60 / 24);
+            var hours = Math.floor(splus / 1000 / 60 / 60 % 24);
+            var min = Math.floor(splus / 1000 / 60 % 60);
+            var sec = Math.floor(splus / 1000 % 60);
+            oLt.innerHTML = day + '天 ' + double(hours) + ':' + double(min) + ':' + double(sec);
+            // 添加前面的0
+            function double(n) {
+                if (n < 10) {
+                    n = '0' + n;
+                }
+                return n;
+            }
+        }
+    </script>
+</body>
+
+</html>
