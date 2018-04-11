@@ -31,11 +31,11 @@ JS demo
 * [跑马灯](https://github.com/hongxinzz/Javascript/blob/master/demo/%E8%B7%91%E9%A9%AC%E7%81%AF.html)
 * [鼠标跟随](https://github.com/hongxinzz/Javascript/blob/master/demo/%E9%BC%A0%E6%A0%87%E8%B7%9F%E9%9A%8F%E6%95%88%E6%9E%9C.html)
 * [改变网页右键菜单](https://github.com/hongxinzz/Javascript/blob/master/demo/%E6%94%B9%E5%8F%98%E7%BD%91%E9%A1%B5%E5%8F%B3%E9%94%AE%E8%8F%9C%E5%8D%95.html)
-* [阅读计时](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E9%98%85%E8%AF%BB%E5%80%92%E8%AE%A1%E6%97%B6.html)
-* [大图滚动](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E5%A4%A7%E5%9B%BE%E6%BB%9A%E5%8A%A8.html)
-* [简易计算器](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8.html)
-* [表单小玩意](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E8%A1%A8%E5%8D%95%E5%B0%8F%E7%8E%A9%E6%84%8F.html)
-* [倒计时秒杀](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/shopning.html)
+* [阅读计时](https://github.com/hongxinzz/Javascript/blob/master/demo/%E9%98%85%E8%AF%BB%E5%80%92%E8%AE%A1%E6%97%B6.html)
+* [大图滚动](https://github.com/hongxinzz/Javascriptblob/master/demo/%E5%A4%A7%E5%9B%BE%E6%BB%9A%E5%8A%A8.html)
+* [简易计算器](https://github.com/hongxinzz/Javascript/blob/master/demo/%E7%AE%80%E6%98%93%E8%AE%A1%E7%AE%97%E5%99%A8.html)
+* [表单小玩意](https://github.com/hongxinzz/Javascript/blob/master/demo/%E8%A1%A8%E5%8D%95%E5%B0%8F%E7%8E%A9%E6%84%8F.html)
+* [倒计时秒杀](https://github.com/hongxinzz/Javascript/blob/master/cn/shopning.html)
 
 Css & Html
 * [导航效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/gensui.html)
