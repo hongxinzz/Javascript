@@ -8,7 +8,7 @@
         在线浏览基础 例:https://hongxinzz.github.io/Javascript-css-html/cn/函数参数与参数匹配.html
         在线浏览Demo 例:https://hongxinzz.github.io/Javascript-css-html/demo/跑马灯.html
 
-Js基本语法
+JacaScript基本语法
 
 * [基本语法](https://github.com/hongxinzz/Javascript-/blob/master/cn/Javascript%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95.html)
 * [数据类型和变量](https://github.com/hongxinzz/Javascript-/blob/master/cn/Javascript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%8F%98%E9%87%8F.html)
