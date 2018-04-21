@@ -21,7 +21,7 @@ JacaScript基本语法
 * [return和++前置后置](https://github.com/hongxinzz/Javascript/blob/master/cn/return%E5%92%8C%2B%2B%E5%89%8D%E7%BD%AE%E5%92%8C%E5%90%8E%E7%BD%AE.html)
 * [DOM新增与删除](https://github.com/hongxinzz/Javascript/blob/master/cn/DOM%E6%96%B0%E5%A2%9E%E4%B8%8E%E5%88%A0%E9%99%A4.html)
 
-JS demo
+JS Demo
 * [倒三角](https://github.com/hongxinzz/Javascript-/blob/master/demo/%E5%80%92%E4%B8%89%E8%A7%92.html)
 * [乘法表](https://github.com/hongxinzz/Javascript-/blob/master/demo/%E4%B9%9D%E4%B9%9D%E4%B9%98%E6%B3%95%E8%A1%A8.html)
 * [动态添加div](https://github.com/hongxinzz/Javascript-/blob/master/demo/%E6%B7%BB%E5%8A%A01000%E4%B8%AAdiv.html)
@@ -37,7 +37,7 @@ JS demo
 * [表单小玩意](https://github.com/hongxinzz/Javascript/blob/master/demo/%E8%A1%A8%E5%8D%95%E5%B0%8F%E7%8E%A9%E6%84%8F.html)
 * [倒计时秒杀](https://github.com/hongxinzz/Javascript/blob/master/cn/shoping.html)
  
-Css & Html
+CSS3 & HTML5
 * [导航效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/gensui.html)
 * [列表效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/list.html)
 * [盒模型边框](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/borderbox.html)
