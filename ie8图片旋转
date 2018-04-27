@@ -1,0 +1,109 @@
+//layerUI + filter
+//改变的css样式属性
+//filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+//rotation的值有 0 1 2 3 4
+//分别代表 0 90度 180度 270度 360度
+思路 - 点击旋转是动态去改变页面上的cssStyle
+<link rel="stylesheet" href="${ctxStatic }/assets/css/rotate.css" id="changeStyle">
+<!--[if IE 8]>
+    <script>
+        $(function () {
+        // remove的是谷歌上viewer插件的class名字。换成自己ie的组件
+            $(".modal-img-enlarge").removeClass('modal-img-enlarge').addClass("new-img-enkarge");
+            var sizeWidth = $('.enlarge-img').width();//获取原来图片的宽
+            var sizeHeight = $('.enlarge-img').height();//获取原来图片的高
+            //储存原来的宽高 方便放大缩小还原
+            var oldWidth = sizeWidth; 
+            var oldHeight = sizeWidth;//
+            var rotateNum = 0;
+            $(".enlarge-img").on('click', function () {
+                var ImgAddress = $(this).css("backgroundImage");
+                // 去除最前面几个无用字符,最后两个无用字符，获取图片完整地址
+                ImgAddress = ImgAddress.slice(5, -2);
+                // 如果值不为空，且图片不为默认图片，则点击展示大图
+                if (ImgAddress != "") {
+                    layer.open({
+                        type: 1,
+                        title: false,
+                        area: ['90%', '90%'],
+                        shadeClose: true, //点击遮罩关闭
+                        content: '\<\div style="padding:20px;margin-top:10%;margin-left:20%;"><img  class="modal-img-enlarge" style="width:300px;height:180px;"/>\<\/div>',
+                        btn: ['放大', '缩小', '重置', '旋转'], //按钮
+                        //放大  建议值写为变量 不写死
+                        yes: function () {
+                            sizeWidth += 40;
+                            sizeHeight += 40;
+                            console.log(sizeWidth,sizeHeight)
+                            if(sizeWidth >= 580 || sizeHeight >= 340){
+                                sizeWidth = 580;
+                                sizeHeight = 340;
+                                $(".modal-img-enlarge").css({
+                                    width: 580,
+                                    height: 340
+                                })
+                            }else{
+                                $(".modal-img-enlarge").css({
+                                    width: sizeWidth,
+                                    height: sizeHeight
+                                })
+                            }
+                        },
+                        //缩小  建议值写为变量 不写死
+                        btn2: function () {
+                            sizeWidth -= 40;
+                            sizeHeight -= 40;
+                            if(sizeWidth <= 140 || sizeHeight <= 60){
+                                sizeWidth = 140;
+                                sizeHeight = 60;
+                                $(".modal-img-enlarge").css({
+                                    width: 150,
+                                    height: 90
+                                })
+                            }else{
+                                $(".modal-img-enlarge").css({
+                                    width: sizeWidth,
+                                    height: sizeHeight
+                                })
+                            }
+                            return false
+                        },
+                        //还原
+                        btn3: function () {
+                            console.log(oldHeight,oldWidth)
+                            $(".modal-img-enlarge").css({
+                                width: oldWidth,
+                                height: oldHeight
+                            })
+                            sizeWidth=oldWidth;
+                            sizeHeight=oldHeight
+
+                            return false
+                        },
+                        //旋转
+                        btn4: function () {
+                            console.log(rotateNum)
+                            rotateNum++;
+                            if (rotateNum == 1) {
+                                $("#changeStyle").attr("href", "${ctxStatic }/assets/css/rotate90.css")
+                            }
+                            if (rotateNum == 2) {
+                                $("#changeStyle").attr("href", "${ctxStatic }/assets/css/rotate180.css")
+                            }
+                            if (rotateNum == 3) {
+                                $("#changeStyle").attr("href", "${ctxStatic }/assets/css/rotate270.css")
+                            }
+                            if (rotateNum == 4) {
+                                $("#changeStyle").attr("href", "${ctxStatic }/assets/css/rotate360.css")
+                                rotateNum = 0;
+                            }
+                            return false
+                        }
+
+                    });
+                    $(".modal-img-enlarge").attr('src', ImgAddress);
+                }
+            })
+        })
+    </script>
+
+    <![endif]-->
