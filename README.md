@@ -37,6 +37,7 @@ JS Demo
 * [表单小玩意](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E8%A1%A8%E5%8D%95%E5%B0%8F%E7%8E%A9%E6%84%8F.html)
 * [倒计时秒杀](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/shoping.html)
 * [字符串位置](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%20%E8%BF%94%E5%9B%9E%E5%AD%97%E7%AC%A6%E4%BD%8D%E7%BD%AE.html)
+* [日历](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E6%97%A5%E5%8E%86.html)
 
  
 CSS3 & HTML5
