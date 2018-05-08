@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 300px;
+            height: 340px;
+            border: 1px solid #000;
+            margin: 50px auto;
+            overflow: hidden;
+
+        }
+
+        ul {
+            width: 310px;
+            list-style: none;
+        }
+
+        .box-top li {
+            width: 61px;
+            height: 30px;
+            background-color: #ccc;
+            text-align: center;
+            font: 400 15px/30px "microsoft yahei";
+            float: left;
+            cursor: pointer;
+        }
+
+        .box-bottom span {
+            display: block;
+            height: 300px;
+            display: none;
+            background-color: pink;
+        }
+
+        .box-top .current {
+            background-color: pink;
+        }
+
+        .box-bottom .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">
+        <div class="box-top">
+            <ul>
+                <li class="current">男装</li>
+                <li>女装</li>
+                <li>鞋子</li>
+                <li>裤子</li>
+                <li>袜子</li>
+            </ul>
+        </div>
+        <div class="box-bottom">
+            <span class="show">都是男装</span>
+            <span class="">都是女装</span>
+            <span class="">都是鞋子</span>
+            <span class="">都是裤子</span>
+            <span class="">都是袜子</span>
+        </div>
+    </div>
+
+
+    <div class="box" id="box2">
+        <div class="box-top">
+            <ul>
+                <li class="current">男装</li>
+                <li>女装</li>
+                <li>鞋子</li>
+                <li>裤子</li>
+                <li>袜子</li>
+            </ul>
+        </div>
+        <div class="box-bottom">
+            <span class="show">都是男装</span>
+            <span class="">都是女装</span>
+            <span class="">都是鞋子</span>
+            <span class="">都是裤子</span>
+            <span class="">都是袜子</span>
+        </div>
+    </div>
+
+    <script>
+
+        //使用方法
+        var box1 = document.getElementById("box1");
+        var box2 = document.getElementById("box2");
+        fn(box1);
+        fn(box2);
+
+        //封装代码：封装到一个方法中。哪个盒子调用，就给哪个盒子。
+        function fn(str) {
+
+            //需求： 鼠标放li上，切换box-bottom里面相对应的盒子。
+            //步骤：
+            //1.获得事件源和box-bottom里面的div
+            //2.绑定事件
+            //3.书写事件驱动程序
+            //绑定属性.(绑定事件之前)
+            //更改类名。(清除所有人，剩下我一个)（给谁更改类名？传递过来的索引是几，我们就更改第几个）
+
+            //1.获得事件源和box-bottom里面的div
+            //            var boxBottom = document.getElementById("boxBottom");
+            var arrLi = str.getElementsByTagName("li");
+            var arrDiv = str.getElementsByTagName("span");
+
+            //遍历数组，事件源的数组(绑定事件用的)
+            for (var i = 0; i < arrLi.length; i++) {
+
+                //绑定属性.(绑定事件之前)
+                arrLi[i].index = i;
+
+                //2.绑定事件
+                arrLi[i].onmouseover = function () {
+
+                    //3.书写事件驱动程序
+
+                    //清除类名用的（排他思想）
+                    for (var j = 0; j < arrLi.length; j++) {
+                        arrLi[j].className = "";
+                        arrDiv[j].className = "";
+                    }
+
+                    //更改类名。（给谁更改类名？传递过来的索引是几，我们就更改第几个）
+                    this.className = "current";
+                    arrDiv[this.index].className = "show";
+
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>
