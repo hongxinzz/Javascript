@@ -40,6 +40,7 @@ JS Demo
 * [日历](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E6%97%A5%E5%8E%86.html)
 * [大图动态加圆点](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E5%A4%A7%E5%9B%BE%E5%8A%A8%E6%80%81%E5%8A%A0%E5%9C%86%E7%82%B9)
 * [Tab封装版](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/Tab%E5%B0%81%E8%A3%85%E7%89%88.html)
+* [js版留言板](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/js%E7%89%88%E7%95%99%E8%A8%80%E6%9D%BF.html)
  
 CSS3 & HTML5
 * [导航效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/gensui.html)
