@@ -1,0 +1,55 @@
+//有一段文本，如下 Life is not measured by the number of breaths we take, but by the moments that take our breath away。
+请编写一个函数，找出文本中每个单词出现的频率。
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <!-- <div id="demo">Life is not measured by the number of breaths we take, but by the moments that take our breath away</div> -->
+    <body>
+    <script type="text/javascript">
+    // //id 选择
+    // function $(id){
+    //     return document.getElementById(id);
+    // }
+    // //获取文字
+    // var demo = $('demo').innerHTML;
+    function repText(text){
+    //转换大写并去除逗号切割空格为数组
+    var newText = text.toUpperCase().replace(",", "").split(" ");
+
+    console.log( newText);
+
+    var arr = [];//存放出来的值
+
+    var num = 0;//默认相同的值
+    // 遍历数组
+    for(var i = 0; i < newText.length;i++){
+        for (var j = i + 1; j < newText.length;j++) {
+            //循环当前的和后面的是不是一样 
+           if(newText[i] === newText[j]){
+            //相同的个数
+             num++
+             //把一样的词和次数丢到数组里
+            arr.push(newText[i], num);
+           }
+        };
+        //每次循环出来都让num为0 避免每次上一次的值污染
+         num = 0
+        console.log(arr,i);
+    }
+    // 遍历新的数组
+        for(var i = 0; i < arr.length; i++) { 
+            // 新的数组里面有数字所以要过滤一下
+            if(typeof(arr[i]) =="number"){
+                continue;
+            }   
+            console.log(arr[i + 0]+"重复了"+arr[i * 1 + 1] +'次'); 
+        } 
+    }
+   repText("Life is not measured by the number of breaths we take, but by the moments that take our breath away")
+    </script>
+    </body>
+</html>
+
