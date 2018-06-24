@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <title>破碎</title>
+    <style>
+        .wrap {
+            position: relative;
+            margin: 0 auto;
+            width: 800px;
+            height: 600px;
+            transform-style: preserve-3d;
+        }
+
+        .wrap div {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap" id="wrap">
+
+    </div>
+</body>
+<script>
+    var dom = document.getElementById('wrap');
+    var arr = ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpeg', 'images/4.jpeg'],
+        index = 0,
+        zIndex = 999999,
+        opacity = 0;
+    poSui(8, 6)
+
+    function poSui(x, y) {
+        var x = x,
+            y = y;
+        console.log(index)
+        var oParentNode = document.createElement('div');
+        oParentNode.style.zIndex = zIndex;
+        zIndex--;
+        dom.appendChild(oParentNode);
+        for (var i = 0; i < x; i++) {
+            for (var j = 0; j < y; j++) {
+                var divs = document.createElement('div');
+                divs.style.zIndex = zIndex;
+                divs.style.backgroundImage = "url(" + arr[index] + ")";
+                divs.style.width = dom.clientWidth / x + 'px';
+                divs.style.height = dom.clientHeight / y + 'px';
+                divs.style.left = (dom.clientWidth / x) * i + 'px';
+                divs.style.top = (dom.clientHeight / y) * j + 'px';
+                divs.style.backgroundPositionX = (dom.clientWidth / x) * -i + 'px';
+                divs.style.backgroundPositionY = (dom.clientHeight / y) * -j + 'px';
+                divs.style.transition = (Math.random() * 1 + 1) + 's';
+                // divs.classList.add('box')
+                oParentNode.appendChild(divs)
+            }
+        }
+        var allDivs = oParentNode.children;;
+
+        setTimeout(() => {
+            index++;
+            index == arr.length && (index = 0);
+            poSui(x, y);
+            for (var i = 0; i < allDivs.length; i++) {
+                // console.log(allDivs)
+                allDivs[i].style.transform = 'perspective(800px) rotateX(' + (Math.random() * 360 - 180) +
+                    'deg) rotateY(' + (Math.random() * 360 - 180) + 'deg) translateX(' + (Math.random() * 400 -
+                        180) + 'px) translateY(' + (Math.random() * 400 - 180) + 'px) translateZ(' + (Math.random() *
+                        400 - 180) + 'px)';
+                allDivs[i].style.opacity = 0;
+            }
+        }, 2000);
+
+        setTimeout( () =>{
+            oParentNode.remove(); //= ''
+            //boom(10,10);
+        }, 3500);
+    }
+</script>
+
+</html>
