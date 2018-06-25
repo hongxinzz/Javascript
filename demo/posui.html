@@ -29,7 +29,7 @@
 </body>
 <script>
     var dom = document.getElementById('wrap');
-    var arr = ['../images/1.jpeg', '../images/2.jpeg', '../images/3.jpeg', '../images/4.jpeg'],
+    var arr = ['images/1.jpeg', 'images/2.jpeg', 'images/3.jpeg', 'images/4.jpeg'],
         index = 0,
         zIndex = 999999,
         opacity = 0;
@@ -54,7 +54,7 @@
                 divs.style.top = (dom.clientHeight / y) * j + 'px';
                 divs.style.backgroundPositionX = (dom.clientWidth / x) * -i + 'px';
                 divs.style.backgroundPositionY = (dom.clientHeight / y) * -j + 'px';
-                divs.style.transition = (Math.random() * 1 + 1) + 's';
+                divs.style.transition = (Math.random() * 1 + 1.5) + 's';
                 // divs.classList.add('box')
                 oParentNode.appendChild(divs)
             }
@@ -68,9 +68,8 @@
             for (var i = 0; i < allDivs.length; i++) {
                 // console.log(allDivs)
                 allDivs[i].style.transform = 'perspective(800px) rotateX(' + (Math.random() * 360 - 180) +
-                    'deg) rotateY(' + (Math.random() * 360 - 180) + 'deg) translateX(' + (Math.random() * 400 -
-                        180) + 'px) translateY(' + (Math.random() * -400 * 180) + 'px) translateZ(' + (Math.random() *
-                         -400 * 180) + 'px)';
+                    'deg) rotateY(' + (Math.random() * 360 - 180) + 'deg) translateX(' + (Math.random() * 400) + 'px) translateY(' + (Math.random() * 400) + 'px) translateZ(' + (Math.random() *
+                        400) + 'px) scale(' + (Math.random() * 2 - 1)+')';
                 allDivs[i].style.opacity = 0;
             }
         }, 2000);
