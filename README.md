@@ -43,6 +43,7 @@ JS Demo
 * [js版留言板](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/js%E7%89%88%E7%95%99%E8%A8%80%E6%9D%BF.html)
 * [无缝滚动](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E6%97%A0%E7%BC%9D%E6%BB%9A%E5%8A%A8.html)
 * [新浪厦门笔试](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/%E6%96%B0%E6%B5%AA%E5%8E%A6%E9%97%A8%E7%AC%94%E8%AF%95.html)
+* [破碎滚动](https://github.com/hongxinzz/Javascript-css-html/blob/master/demo/posui.html)
 
 CSS3 & HTML5
 * [导航效果](https://github.com/hongxinzz/Javascript-css-html/blob/master/cn/gensui.html)
