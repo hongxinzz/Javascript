@@ -1,0 +1,27 @@
+笔记
+ie8: background:url("") no-repeat center center;
+Other: background:url("")no-repeat center center;
+<script>
+     /**
+     * 求字符串的字节长度 
+    */
+    // 求字符串的字节长度 中文为2字节 英文 空格为1；利用chaCodeAt
+    function str(text){
+        // 获取str
+        var chaStr = text;
+        // 字节长度
+        var num = 0;
+        // 传参进来的参数
+        var chaStrLength = chaStr.length;
+        for(var i = 0; i < chaStrLength; i++){
+            if(chaStr.charCodeAt(i) > 255){
+                num+=2
+            }
+            if(chaStr.charCodeAt(i) <= 255){
+                num+=1
+            }
+        }
+            console.log(num)
+    }
+     str('我是12 3 22');
+    </script>
