@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双飞翼布局</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /*#content:after{*/
+        /*display: block;*/
+        /*content: " ";*/
+        /*clear: both;*/
+    /*}*/
+    .aside .main .extra{
+        float: left;
+    }
+    .aside{
+        width: 100px;
+        height: 300px;
+        margin-left: -100%;
+        background: red;
+    }
+    .extra{
+        width: 150px;
+        height: 300px;
+        margin-right: -150px;
+        background: yellow;
+    }
+    .main{
+        width: 100%;
+    }
+    .wrap{
+        margin-left: 100px;
+        margin-right: 150px;
+        background: blue;
+        height: 350px;
+    }
+</style>
+<body>
+    <div id="content">
+        <div class="main">
+            <div class="wrap">main</div>
+        </div>
+        <div class="aside">aside</div>
+        <div class="extra">extra</div>
+    </div>
+</body>
+</html>
